@@ -1,26 +1,37 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@theme {
+   --font-style-primary : "Montserrat";
+   --color-legal-primary :"linear-gradient(180deg, #181818 0%, #FEA856 30%, #F9784C 50%, #9C356D 75%, #FCEACF 100%)";
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.Bg-Gradient {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 214px 0px;
+    gap: 10px;
+
+    position: absolute;
+    width: 100%;
+    height: 532px;
+    left: 0px;
+    top: 600px;
+    background: linear-gradient(342.27deg, #FFFAEF 24.53%, #FCD68B 37.59%, #F9784C 50.72%, #9C356D 62.85%, #171717 76.83%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.App {
+  width: 432;
+  height: 696;
+  opacity: 1;
+  border-radius: 500px;
+  background: linear-gradient(
+    151.4deg,
+    #fefaee 5.26%,
+    #fcd68b 29.9%,
+    #f9784c 53.25%,
+    #9c356d 72.94%
+  );
 }
