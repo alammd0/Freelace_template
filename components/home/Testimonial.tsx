@@ -52,7 +52,7 @@ export default function Testimonials() {
                 {
                     testimonials.map((item, index) => {
                         return (
-                            <div className="bg-[linear-gradient(96.36deg,#FCD68B_0%,#FFFFFF_100%)] px-4 py-6 rounded-2xl font-style-primary flex flex-col gap-2" key={index}>
+                            <div className="bg-[linear-gradient(96.36deg,#FCD68B_0%,#FFFFFF_100%)] px-4 py-6 rounded-2xl font-style-primary flex flex-col gap-2 cursor-pointer hover:scale-105 transition-all duration-100" key={index}>
                                 <div className="flex flex-col md:flex-row md:gap-10 gap-4">
                                     <div>
                                         {/* logo */}
